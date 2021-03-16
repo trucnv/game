@@ -1,0 +1,215 @@
+<html>
+	<head>
+		<title>Documentation</title>
+		<style>
+		body{font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;background-color: #f9fff7;}
+		ul{list-style: none;}
+		li{padding:4px;}
+		a{text-decoration:none;color: #1cab1c;}
+		.contener{max-width:850px; border:solid 1px #dedede;margin:10px auto;padding:10px;background-color: #fcfcfc;}
+		h1{margin-left:25px;color: #656565;text-align:center;}
+		h2{margin-left:25px;color: #656565;}
+		h3{margin-left:35px;color: #656565;}
+		.top{float: right;}
+		.note{color:gray;}
+		p{padding-left: 25px;line-height: 1.3em;}
+		.logo{max-width: 128px;float: right;border-radius: 5px;margin-left: 10px;height: 92px;}
+		.author{float:right;max-width:320px;}
+		.clear{clear:both;}
+		.img{max-width:90%;margin: 0 auto;display: block;}
+		.slider{width:45%;max-width: 150px;margin-left:10px;float:right;}
+		</style>
+	</head>
+	<body>
+		<div id="top" class="contener">
+			<br class="clear">
+			<h1>Billiard Multiplayer</h1><br>
+			<img src="./assets/logo.jpg" class="img"/><br>
+			
+			<div class="author">
+				<p>Thank you for purchasing my game.<br>If you have any questions that are beyond the scope of this help file, please feel free to email me. Thanks so much!</p>
+				
+				<p>
+					<table>
+						<tr><td>Created:</td></tr>
+						<tr><td>By:</td><td>Robinlal vbhatt0106@gmal.com</td></tr>
+						<tr><td>Category:</td><td>Games</td></tr>
+					</table>
+				</p>
+			</div>
+			<br>
+			<div>
+				<h2>Table of Contents</h2>
+				<ul>
+					<li><a href="#p1">1. Introduction</a></li>
+					<li><a href="#p2">2. Download Unity 3d</a></li>
+					<li><a href="#p3">3. Import the game</a></li>
+					<li><a href="#p4">4. Edit Name, Icon and package name</a></li>
+					<li><a href="#p5">5. Configure Playfab Account</a></li>
+					<li><a href="#p6">6. Configure AdMob</a></li>
+					<li><a href="#p7">7. Setting up your project for Unity Services</a></li>
+					<li><a href="#p8">8. Configure UnityAds</a></li>
+					<li><a href="#p9">9. Configure In-App Purchases </a></li>
+					<li><a href="#p10">10. Configure Facebook</a></li>
+				</ul>
+			</div>
+			<br class="clear">
+		</div>
+		<div id="p1" class="contener">
+			<a href="#top" class="top">&#8598;TOP</a>
+			<h2>1. Introduction</h2>
+			
+			<p class="note">Most importantly, developers or buyers may not be technically inclined.<br>
+			They may just be looking for an item to drop into the editor and run it.<br>
+			Which led us to provide this quick start guide.<br>
+			Typical user may won't really to know about all the details listed in the section (5), but you are encouraged to review this section (5) and take only the outline.<br><br>
+		    <img src="./assets/graphic.jpg" class="img"/><br></p>
+			<br class="clear">
+		</div>
+		
+		<div id="p2" class="contener">
+			<a href="#top" class="top">&#8598;TOP</a>
+			<h2>2. Download Unity 3d</h2>
+			<a href="https://unity3d.com/get-unity/download" target="_blank" style="text-align:center;margin: 20px;display: block;">Link to download the latest version</a>
+		</div>
+		
+		<div id="p3" class="contener">
+			<a href="#top" class="top">&#8598;TOP</a>
+			<h2>3. Import the game</h2>
+			<p class="note">- Unzip downloaded project <br>
+			- Open it in Unity3D (required version 5.4.2 or higher)<br>
+			<img src="./assets/unityapps.png" class="img"/><br>
+		    - It will take some time open and build the project , so have patience<br>
+		    <img src="./assets/unityapp1.png" class="img"/></p>
+			
+		</div>
+		
+		<div id="p4" class="contener">
+			<a href="#top" class="top">&#8598;TOP</a>
+			<h2>4. Edit Name, Icon and package name</h2>
+			
+			<p class="note">- In Unity3D navigate to Edit → Project Settings → Player <br>
+				<img src="./assets/projectname.png" class="img"/><br>
+			- There you have to configure your game name, icon and Bundle Identifie<br>
+		    <img src="./assets/Icon.png" class="img"/><br>
+		    <img src="./assets/Splash.png" class="img"/><br>
+		    <img src="./assets/name.jpg" class="img"/><br>
+		    <img src="./assets/Packagename.png" class="img"/></p>
+
+		</div>
+		
+		<div id="p5" class="contener">
+			<a href="#top" class="top">&#8598;TOP</a>
+			<h2>5. Configure Playfab Account</h2>
+			
+			<p class="note">- Go to https://playfab.com/<br>
+			- Register Account<br>
+			<img src="./assets/playfablogin.png" class="img"/><br> 
+		    - Create new game<br>
+		    <img src="./assets/createtitle.png" class="img"/><br> 
+	        - Go to your game on playfab webpage and navigate to Addons. Search for „Photon”, click it and push „Install Photon” button<br> 
+	        - Open „StaticStrings.cs” file and edit Playfab and photon Ids:</p>
+			<img src="./assets/1.PNG" class="img"/> 
+			<br><br>
+		</div>
+		
+		
+		<div id="p6" class="contener">
+			<a href="#top" class="top">&#8598;TOP</a>
+			<h2>6. Configure AdMob</h2>
+			<p class="note">- Go to https://admob.google.com/home/<br>
+			- Click Sign up button on top-right corner<br>
+			- Use your Google Account that was used to upload your Android App before<br>
+			- Click on Apps -> ADD APP like the following screenshot<br>
+			 <img src="./assets/admob.png" class="img"/><br>
+			- Enter in your App Name -> then Add it<br>
+			<img src="./assets/admob-1.png" class="img"/><br>
+			- Click on Ad units -> ADD AD UNIT<br>
+			<img src="./assets/admob-2.png" class="img"/><br>
+			- Choose an option you want to use<br>
+			<img src="./assets/admob-3.png" class="img"/><br>
+			- Edit advertising ids in „StaticStrings.cs” file:</p>
+			<img src="./assets/2.PNG" class="img"/>
+			
+			<br><br>
+		</div>
+		
+		<div id="p7" class="contener">
+			<a href="#top" class="top">&#8598;TOP</a>
+			<h2>7.  Setting up your project for Unity Services</h2>
+			<p class="note">- To open the Services Window, go to Window > General > Services, or click the cloud button in the toolbar. . If you have not yet linked your project with a Services ID, the following appears:<br>
+				<img src="./assets/UnityServicesWindow.png" class="img"/><br>
+			-This allows you to create a new Project ID or select an existing one.<br><br>
+			To create a Project ID, you must specify an Organization and a Project Name.<br><br>
+			If this is the first time you are using any of the Unity Services, you will need to select both an Organization and a Project name. The Select organization field is typically your company name.<br><br>
+			When you first open a Unity Account (usually when you first download and install Unity), a default “Organization” is created under your account. This default Organization has the same name as your account username. If this is the Organization you want your Project to be associated with, select this organization from the list.<br><br>
+			Sometimes people need to be able to work in more than one organization - for example, if you are working with different teams on different projects. If you need to work with multiple organizations, you can add and manage your organizations on the organization ID web page. If you belong to multiple organizations, they will appear in the list.<br><br>
+			Select your organization and click Create.<br><br>
+			<img src="./assets/UnityServicesCreateNewProjectID.png" class="img"/><br><br>
+			The Project name for your new Unity Services Project ID is automatically filled in with the name you picked for your Project when you first created it. You can change the Project name later in the Settings section of the Services window.<br><br>
+			Sometimes you might need to re-link your project with the Unity Services Project ID. In this case, select the Project from the list of your existing Projects that are registed with Unity Services.<br>
+			<img src="./assets/UnityServicesSelectExistingProject.png" class="img"/><br><br>
+			Or for detailed info follow steps on unity webite: https://docs.unity3d.com/Manual/SettingUpProjectServices.html</p>
+			
+			<br><br>
+		</div>
+		
+		<div id="p8" class="contener">
+			<a href="#top" class="top">&#8598;TOP</a>
+			<h2>8.  Configure UnityAds</h2>
+			<p class="note">- Navigate to Window → Services<br>
+			<img src="./assets/windows.png" class="img"/><br> 
+			- Enable Ads</p>
+			<img src="./assets/openDrawer.png" class="img"/>
+			<br><br>
+		</div>
+		
+		<div id="p9" class="contener">
+			<a href="#top" class="top">&#8598;TOP</a>
+			<h2>9. Configure In-App Purchases </h2>
+			
+			<p class="note">- Navigate to Window → Services<br> 
+				- Enable In-App Purchasing<br>
+				<img src="./assets/UnityIAP.png" class="img"/><br>
+				<img src="./assets/UnityIAP1.png" class="img"/><br> 
+				- Follow steps if required: https://docs.unity3d.com/Manual/UnityIAPSettingUp.html<br><br> 
+				FOR ANDROID:<br>
+				- Follow steps from „Register the application” on website: https://docs.unity3d.com/Manual/UnityIAPGoogleConfiguration.html<br><br>
+
+				FOR iOS<br>
+				- Follow steps from „Register the application” on website: https://docs.unity3d.com/Manual/UnityIAPAppleConfiguration.html<br><br>
+
+			- In-App Products names (you must put same names for android and ios on dashboard)<br><br>
+			pool_1000_coins<br>
+			pool_5000_coins<br> 
+		    pool_10000_coins<br>
+		    pool_50000_coins<br>
+		    pool_100000_coins</p>
+			
+		</div>
+		
+		
+		
+		<div id="p10" class="contener">
+			<a href="#top" class="top">&#8598;TOP</a>
+			<h2>10. Configure Facebook</h2>
+		 <p class="note">- Go to https://developers.facebook.com/<br> 
+		 	- Create new application<br> 
+		 	- On facebook page navigate to your app and copy Application Identifier.<br> 
+		 	- Go to Unity3D. Navigate to Facebook → Edit Settings. Paste your Application Identifier<br> 
+		 	- On facebook page navigate to your app → Settings<br> 
+		 	- Add Platform → Android. Fill data as on screenshot:<br>
+		 	<img src="./assets/4.PNG" class="img"/><br>
+		 	Google Play package name: same as Bundle Identifier in Unity3D Player settings<br> 
+		 	Class name: Don’t edit<br>
+		 	 Shortcuts: Follow „Running sample apps” on page. Add keys for debug and release keystores: https://developers.facebook.com/docs/android/getting-started<br>
+		 	- Add Platform → iOS. Fill data as on screenshot:<br>
+		 	<img src="./assets/5.PNG" class="img"/><br>
+		 	- Bundle ID – same as Bundle Identifier in Unity3D Player settings for iOS<br>
+		    - Add Platform → Facebook Canvas. Fill data as on screenshot:<br>
+		<img src="./assets/6.PNG" class="img"/></p>
+			<br><br><br>
+		</div>
+		<br><br><br>
+	</body>
+</html>
